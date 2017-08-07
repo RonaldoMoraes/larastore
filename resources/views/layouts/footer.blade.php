@@ -1,7 +1,7 @@
 <footer class="blog-footer">
   
   <p>
-    <a href="#">Back to top</a>
+    <a href="#" class="btn btn-default">Back to top</a>
   </p>
 
   <!-- Scripts -->

@@ -20,10 +20,18 @@
 
         @include('layouts.flash-messages')
 
-        @yield('content')
+        <div class="container">
+            @yield('content')
+        </div>
+
     </div>
+    
+    <hr>
 
-    @include('layouts.footer')
+    <div class="container">
+    
+        @include('layouts.footer')
 
+    </div>
 </body>
 </html>
