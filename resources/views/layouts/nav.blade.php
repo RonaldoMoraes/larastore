@@ -22,6 +22,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="">Users</a></li>
                 <li><a href="{{route('products')}}">Products</a></li>
+                <li><a href="{{route('trades')}}">Trades</a></li>
                 <!--
                 <li><a class="" href="">adasd</a></li>
                 <li><a class="" href="">adasd</a></li>

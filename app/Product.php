@@ -7,4 +7,9 @@ namespace App;
 class Product extends Model
 {
     #protected $fillable = ['name', 'price'];
+
+	public function trades(){
+    	return $this->hasMany(Trade::class);
+    }
+
 }

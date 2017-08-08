@@ -22,21 +22,38 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-###--------------------------------------------------------------------------------------------
 ### Products routes ###------------------------------------------------------------------------
 ###--------------------------------------------------------------------------------------------
-#index
+# Index
 Route::get('/products', 'ProductController@index')				->	name('products');
-#create
+# Create
 Route::get('/products/create', 'ProductController@create')		->	name('new_product');
-#store
+# Store
 Route::post('/products', 'ProductController@store');
-#show
+# Show
 Route::get('/products/{product}', 'ProductController@show')		->	name('product');
-#edit
-Route::get('/products/{product}/edit', 'ProductController@edit')->name('edit_product');
-#update
-Route::put('/products/{product}', 'ProductController@update')	->name('update_product');;
-#destroy
-Route::delete('/products/{product}', 'ProductController@destroy')->name('delete_product');
+# Edit
+Route::get('/products/{product}/edit', 'ProductController@edit')->	name('edit_product');
+# Update
+Route::put('/products/{product}', 'ProductController@update')	->	name('update_product');;
+# Destroy
+Route::delete('/products/{product}', 'ProductController@destroy')->	name('delete_product');
+##---------------------------------------------------------------------------------------------
+
+### Trade routes ###---------------------------------------------------------------------------
+###--------------------------------------------------------------------------------------------
+# Index
+Route::get('/trades', 'TradeController@index')				->	name('trades');
+# Create
+Route::get('/trades/create', 'TradeController@create')		->	name('new_trade');
+# Store
+Route::post('/trades', 'TradeController@store');
+# Show
+Route::get('/trades/{trade}', 'TradeController@show')		->	name('trade');
+# Edit
+Route::get('/trades/{trade}/edit', 'TradeController@edit')	->	name('edit_trade');
+# Update
+Route::put('/trades/{trade}', 'TradeController@update')		->	name('update_trade');;
+# Destroy
+Route::delete('/trades/{trade}', 'TradeController@destroy')	->	name('delete_trade');
 ##---------------------------------------------------------------------------------------------

@@ -3,15 +3,15 @@
 @section ('content')
 
 <div class="">
-  <a href="{{route('new_product')}}" class="btn btn-primary">Novo Produto</a>
+  <a href="{{route('new_product')}}" class="btn btn-primary">New Product</a>
 </div>
 <h1>Listing all products</h1>
 
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Preço</th>
+      <th>Name</th>
+      <th>Price</th>
     </tr>
   </thead>
 
