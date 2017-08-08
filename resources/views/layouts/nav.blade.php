@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li><a href="">Users</a></li>
+                <li><a href="{{route('users_list')}}">Users</a></li>
                 <li><a href="{{route('products')}}">Products</a></li>
                 <li><a href="{{route('trades')}}">Trades</a></li>
                 <!--
